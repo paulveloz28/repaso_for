@@ -18,6 +18,9 @@ function mostrar(opcion) {
         case 6:
             mostrarMensaje3();
             break;
+        case 7:
+            mostrarMensaje4();
+            break;
     }
 }
 
@@ -53,6 +56,12 @@ function mostrarMensaje2(){
 
 function mostrarMensaje3(){
     for(let i=0;i<3;i++){
+        console.log(i);
+    }
+}
+
+function mostrarMensaje4(){
+    for(let i=8;i>5;i--){
         console.log(i);
     }
 }
