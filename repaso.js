@@ -6,6 +6,9 @@ function mostrar(opcion) {
         case 2:
             imprimirCentenas();
             break;
+        case 3:
+            imprimirCentenasRegresivo();
+            break;
     }
 }
 
@@ -19,4 +22,9 @@ function imprimirCentenas(){
     for(let i=1200;i<2400;i+=100){
         console.log(i);
     }
+}
+
+function imprimirCentenasRegresivo(){
+    for(let i=1700; i>800;i-=100)
+        console.log(i);
 }
