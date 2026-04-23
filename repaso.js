@@ -21,6 +21,9 @@ function mostrar(opcion) {
         case 7:
             mostrarMensaje4();
             break;
+         case 8:
+            imprimirTabla3();
+            break;
     }
 }
 
@@ -63,5 +66,11 @@ function mostrarMensaje3(){
 function mostrarMensaje4(){
     for(let i=8;i>5;i--){
         console.log(i);
+    }
+}
+
+function imprimirTabla3(){
+    for(let i=1;i<=10;i++){
+        console.log(("3x"+i+"="+(3*i)));
     }
 }
