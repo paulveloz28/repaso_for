@@ -3,6 +3,9 @@ function mostrar(opcion) {
         case 1:
             ejercicio1();
             break;
+        case 2:
+            imprimirCentenas();
+            break;
     }
 }
 
@@ -12,4 +15,8 @@ function ejercicio1() {
     }
 }
 
-
+function imprimirCentenas(){
+    for(let i=1200;i<2400;i+=100){
+        console.log(i);
+    }
+}
