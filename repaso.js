@@ -24,6 +24,20 @@ function mostrar(opcion) {
          case 8:
             imprimirTabla3();
             break;
+        case 9:
+            imprimirPares();
+            break;
+        case 10:
+            imprimirLista();
+            break;
+        case 11:
+            imprimirPiramida();
+            break;
+        case 12:
+            imprimirPiramidaInvertida();
+            break;
+        default:
+            break;
     }
 }
 
@@ -72,5 +86,41 @@ function mostrarMensaje4(){
 function imprimirTabla3(){
     for(let i=1;i<=10;i++){
         console.log(("3x"+i+"="+(3*i)));
+    }
+}
+
+function imprimirPares(){
+    for(let i=1; i<=20; i++){
+        if(i%2==0){
+            console.log(i);
+        }
+    }
+}
+
+function imprimirLista(){
+    for (let i = 1; i <= 10; i++) {
+        for(let j = 1; j <= 10; j++){
+            console.log("A"+(i*10)+"-"+j);
+        }
+    }
+}
+
+function imprimirPiramida() {
+    for (let i = 1; i <= 9; i++) {        
+        let fila = "";
+        for (let j = 1; j <= i; j++) {    
+            fila += i;
+        }
+        console.log(fila);
+    }
+}
+
+function imprimirPiramidaInvertida() {
+    for (let i = 9; i >= 1; i--) {        
+        let fila = "";
+        for (let j = 1; j <= i; j++) {    
+            fila += i;
+        }
+        console.log(fila);
     }
 }
